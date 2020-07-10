@@ -4,8 +4,14 @@
 \alias{plot.lipidData}
 \title{plot.lipidData}
 \usage{
-\method{plot}{lipidData}(omicsData, order_by = NULL, color_by = NULL,
-  facet_by = NULL, facet_cols = NULL, ...)
+\method{plot}{lipidData}(
+  omicsData,
+  order_by = NULL,
+  color_by = NULL,
+  facet_by = NULL,
+  facet_cols = NULL,
+  ...
+)
 }
 \description{
 For plotting an S3 object of type 'lipidData'

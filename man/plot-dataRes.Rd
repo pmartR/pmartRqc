@@ -4,8 +4,7 @@
 \alias{plot.dataRes}
 \title{Plots an object of class dataRes}
 \usage{
-\method{plot}{dataRes}(dataRes, metric = NULL, density = FALSE,
-  ncols = NULL)
+\method{plot}{dataRes}(dataRes, metric = NULL, density = FALSE, ncols = NULL)
 }
 \arguments{
 \item{dataRes}{an object of the class 'dataRes, usually created by \code{\link{summarize}}.}

@@ -4,8 +4,7 @@
 \alias{spans_make_distribution}
 \title{Creates the list of median p-values used to make the background distribution used to compute the SPANS score in step 2.}
 \usage{
-spans_make_distribution(omicsData, norm_fn, sig_inds, nonsig_inds,
-  select_n)
+spans_make_distribution(omicsData, norm_fn, sig_inds, nonsig_inds, select_n)
 }
 \arguments{
 \item{omicsData}{an object of the class 'pepData', 'proData', 'lipidData', or 'metabData' usually created by \code{\link{as.pepData}}, \code{\link{as.proData}}, \code{\link{as.lipidData}}, or  \code{\link{as.metabData}}, respectively.}

@@ -4,8 +4,14 @@
 \alias{surv_designation}
 \title{Create a "surv_DF" attribute so that survival analysis can be implemented.}
 \usage{
-surv_designation(omicsData, t_death, t_progress = NULL, ind_death,
-  ind_progress = NULL, covariates = NULL)
+surv_designation(
+  omicsData,
+  t_death,
+  t_progress = NULL,
+  ind_death,
+  ind_progress = NULL,
+  covariates = NULL
+)
 }
 \arguments{
 \item{omicsData}{an object of the class 'lipidData', 'metabData', 'pepData', or 'proData' usually created by \code{\link{as.lipidData}}, \code{\link{as.metabData}}, \code{\link{as.pepData}}, or \code{\link{as.proData}}, respectively.}

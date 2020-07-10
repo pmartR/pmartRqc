@@ -4,8 +4,14 @@
 \alias{nonmissing_per_group}
 \title{Computes the Number of Non-Missing Data Points by Group}
 \usage{
-nonmissing_per_group(omicsData = NULL, e_data = NULL, groupDF = NULL,
-  cname_id = NULL, samp_id = NULL, check.names = NULL)
+nonmissing_per_group(
+  omicsData = NULL,
+  e_data = NULL,
+  groupDF = NULL,
+  cname_id = NULL,
+  samp_id = NULL,
+  check.names = NULL
+)
 }
 \arguments{
 \item{omicsData}{an optional object of one of the classes "pepData", "proData", "metabData", or "lipidData", usually created by \code{\link{as.pepData}}, \code{\link{as.proData}}, \code{\link{as.metabData}}, or \code{\link{lipidData}}, respectively. Either omicsData or all of e_data, groupDF, cname_id, and samp_id must be provided.}

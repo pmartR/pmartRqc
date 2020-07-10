@@ -3,8 +3,4 @@
 \docType{package}
 \name{pmartR}
 \alias{pmartR}
-\alias{pmartR-package}
 \title{My package}
-\description{
-My package
-}

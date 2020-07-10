@@ -4,8 +4,7 @@
 \alias{summary.proteomicsFilt}
 \title{Produce a basic summary of a proteomics_filter object}
 \usage{
-\method{summary}{proteomicsFilt}(filter_object, min_num_peps = NULL,
-  degen_peps = FALSE)
+\method{summary}{proteomicsFilt}(filter_object, min_num_peps = NULL, degen_peps = FALSE)
 }
 \arguments{
 \item{filter_object}{S3 object of class 'proteomicsFilt' created by \code{\link{proteomics_filter}}.}

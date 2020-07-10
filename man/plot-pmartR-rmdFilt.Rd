@@ -4,8 +4,7 @@
 \alias{plot.rmdFilt}
 \title{plot.rmdFilt}
 \usage{
-\method{plot}{rmdFilt}(filter_object, pvalue_threshold = NULL,
-  sampleID = NULL, ...)
+\method{plot}{rmdFilt}(filter_object, pvalue_threshold = NULL, sampleID = NULL, ...)
 }
 \arguments{
 \item{pvalue_threshold}{A threshold for the Robust Mahalanobis Distance (RMD) p-value. If \code{sampleID} is NULL (see \code{sampleID} below), a horizontal line is plotted at the RMD value that corresponds with the threshold, and all samples above the line have a p-value below the threshold. If \code{sampleID} is not NULL, \code{pvalue_threshold} will do nothing. Default value is NULL.}

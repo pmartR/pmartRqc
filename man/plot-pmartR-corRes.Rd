@@ -4,9 +4,15 @@
 \alias{plot.corRes}
 \title{plot.corRes}
 \usage{
-\method{plot}{corRes}(corRes_object, omicsData = NULL,
-  interactive = FALSE, x_lab = TRUE, y_lab = TRUE,
-  colorbar_lim = c(NA, NA), ...)
+\method{plot}{corRes}(
+  corRes_object,
+  omicsData = NULL,
+  interactive = FALSE,
+  x_lab = TRUE,
+  y_lab = TRUE,
+  colorbar_lim = c(NA, NA),
+  ...
+)
 }
 \arguments{
 \item{corRes_object}{an object of the class "corRes" created by calling \code{cor_result} on an omicsData object}

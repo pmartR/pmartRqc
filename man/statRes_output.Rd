@@ -4,8 +4,14 @@
 \alias{statRes_output}
 \title{Function to take raw output of `imd_anova` and create output for `statRes` object}
 \usage{
-statRes_output(imd_out, omicsData, comparisons, test_method, pval_adjust,
-  pval_thresh)
+statRes_output(
+  imd_out,
+  omicsData,
+  comparisons,
+  test_method,
+  pval_adjust,
+  pval_thresh
+)
 }
 \arguments{
 \item{imd_out}{Data.frame containing the results of the imd anova call}

@@ -4,8 +4,14 @@
 \alias{median_center}
 \title{Median Center Transformation}
 \usage{
-median_center(e_data, edata_id, feature_subset, backtransform = FALSE,
-  apply_norm = FALSE, check.names = TRUE)
+median_center(
+  e_data,
+  edata_id,
+  feature_subset,
+  backtransform = FALSE,
+  apply_norm = FALSE,
+  check.names = TRUE
+)
 }
 \arguments{
 \item{e_data}{a \eqn{p \times n + 1} data.frame, where \eqn{p} is the number of peptides, lipids, or metabolites and \eqn{n} is the number of samples. Each row corresponds to data for a peptide, protein, lipid, or metabolite, with a column giving the identifer name.}

@@ -4,8 +4,14 @@
 \alias{custom_sampnames}
 \title{Creates custom sample names for plots}
 \usage{
-custom_sampnames(omicsData, firstn = NULL, from = NULL, to = NULL,
-  delim = NULL, components = NULL)
+custom_sampnames(
+  omicsData,
+  firstn = NULL,
+  from = NULL,
+  to = NULL,
+  delim = NULL,
+  components = NULL
+)
 }
 \arguments{
 \item{omicsData}{omicsData an object of the class 'pepData', 'proData', 'metabData', or 'lipidData', usually created by \code{pepData}, \code{proData}, \code{metabData}, or \code{lipidData}, respectively.}

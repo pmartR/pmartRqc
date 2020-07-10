@@ -4,8 +4,7 @@
 \alias{summary.imdanovaFilt}
 \title{Produce a basic summary of a imdanova_filter object}
 \usage{
-\method{summary}{imdanovaFilt}(filter_object, min_nonmiss_anova = NULL,
-  min_nonmiss_gtest = NULL)
+\method{summary}{imdanovaFilt}(filter_object, min_nonmiss_anova = NULL, min_nonmiss_gtest = NULL)
 }
 \arguments{
 \item{filter_object}{S3 object of class 'imdanovaFilt' created by \code{\link{imdanova_filter}}.}

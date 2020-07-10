@@ -4,8 +4,7 @@
 \alias{combine_techreps}
 \title{Combine technical replicates of an omicsData object}
 \usage{
-combine_techreps(omicsData, combine_fn = "mean",
-  bio_sample_names = NULL)
+combine_techreps(omicsData, combine_fn = "mean", bio_sample_names = NULL)
 }
 \arguments{
 \item{omicsData}{an object of the class 'lipidData', 'metabData', 'pepData', or 'proData', usually created by \code{\link{as.lipidData}}, \code{\link{as.metabData}}, \code{\link{as.pepData}}, or \code{\link{as.proData}}, respectively.  The parameter techrep_cnames must have been specified when creating this object.}

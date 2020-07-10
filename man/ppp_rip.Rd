@@ -4,8 +4,7 @@
 \alias{ppp_rip}
 \title{Identify Proportion of Peptides Present (PPP) and Rank Invariant Peptides (RIP)}
 \usage{
-ppp_rip(e_data, edata_id, fdata_id, groupDF, alpha = 0.2,
-  proportion = 0.5)
+ppp_rip(e_data, edata_id, fdata_id, groupDF, alpha = 0.2, proportion = 0.5)
 }
 \arguments{
 \item{e_data}{a \eqn{p \times n + 1} data.frame, where \eqn{p} is the number of peptides, proteins, lipids, or metabolites and \eqn{n} is the number of samples. Each row corresponds to data for a peptide, protein, lipid, or metabolite, with a column giving the identifer name.}

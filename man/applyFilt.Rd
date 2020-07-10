@@ -16,14 +16,16 @@ applyFilt(filter_object, omicsData, ...)
 
 \method{applyFilt}{cvFilt}(filter_object, omicsData, cv_threshold = 150)
 
-\method{applyFilt}{rmdFilt}(filter_object, omicsData,
-  pvalue_threshold = 1e-04)
+\method{applyFilt}{rmdFilt}(filter_object, omicsData, pvalue_threshold = 1e-04)
 
-\method{applyFilt}{proteomicsFilt}(filter_object, omicsData,
-  min_num_peps = NULL, degen_peps = FALSE)
+\method{applyFilt}{proteomicsFilt}(filter_object, omicsData, min_num_peps = NULL, degen_peps = FALSE)
 
-\method{applyFilt}{imdanovaFilt}(filter_object, omicsData,
-  min_nonmiss_anova = NULL, min_nonmiss_gtest = NULL)
+\method{applyFilt}{imdanovaFilt}(
+  filter_object,
+  omicsData,
+  min_nonmiss_anova = NULL,
+  min_nonmiss_gtest = NULL
+)
 
 \method{applyFilt}{customFilt}(filter_object, omicsData)
 }

@@ -10,17 +10,25 @@
 \usage{
 rmd_filter(omicsData, ...)
 
-\method{rmd_filter}{pepData}(omicsData, metrics = c("MAD", "Kurtosis",
-  "Skewness", "Correlation", "Proportion_Missing"))
+\method{rmd_filter}{pepData}(
+  omicsData,
+  metrics = c("MAD", "Kurtosis", "Skewness", "Correlation", "Proportion_Missing")
+)
 
-\method{rmd_filter}{proData}(omicsData, metrics = c("MAD", "Kurtosis",
-  "Skewness", "Correlation", "Proportion_Missing"))
+\method{rmd_filter}{proData}(
+  omicsData,
+  metrics = c("MAD", "Kurtosis", "Skewness", "Correlation", "Proportion_Missing")
+)
 
-\method{rmd_filter}{lipidData}(omicsData, metrics = c("MAD", "Kurtosis",
-  "Skewness", "Correlation"))
+\method{rmd_filter}{lipidData}(
+  omicsData,
+  metrics = c("MAD", "Kurtosis", "Skewness", "Correlation")
+)
 
-\method{rmd_filter}{metabData}(omicsData, metrics = c("MAD", "Kurtosis",
-  "Skewness", "Correlation"))
+\method{rmd_filter}{metabData}(
+  omicsData,
+  metrics = c("MAD", "Kurtosis", "Skewness", "Correlation")
+)
 }
 \arguments{
 \item{omicsData}{an object of the class 'pepData', 'proData', 'metabData', or 'lipidData', usually created by \code{\link{as.pepData}}, \code{\link{as.proData}}, \code{\link{as.metabData}}, or \code{\link{as.lipidData}}, respectively.}

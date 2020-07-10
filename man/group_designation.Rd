@@ -4,8 +4,12 @@
 \alias{group_designation}
 \title{Creates Data Frame for Group Membership Based on Specified Main Effects}
 \usage{
-group_designation(omicsData, main_effects, covariates = NULL,
-  time_course = NULL)
+group_designation(
+  omicsData,
+  main_effects,
+  covariates = NULL,
+  time_course = NULL
+)
 }
 \arguments{
 \item{omicsData}{an object of the class 'lipidData', 'metabData', 'pepData', or 'proData', usually created by \code{\link{as.lipidData}}, \code{\link{as.metabData}}, \code{\link{as.pepData}}, or \code{\link{as.proData}}, respectively.}

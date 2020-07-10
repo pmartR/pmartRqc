@@ -4,8 +4,16 @@
 \alias{as.metabData}
 \title{Convert Data to Appropriate pmartR Class}
 \usage{
-as.metabData(e_data, f_data, e_meta = NULL, edata_cname, fdata_cname,
-  emeta_cname = NULL, techrep_cname = NULL, ...)
+as.metabData(
+  e_data,
+  f_data,
+  e_meta = NULL,
+  edata_cname,
+  fdata_cname,
+  emeta_cname = NULL,
+  techrep_cname = NULL,
+  ...
+)
 }
 \arguments{
 \item{e_data}{a \eqn{p \times n + 1} data.frame of expression data, where \eqn{p} is the number of metabolites observed and \eqn{n} is the number of samples. Each row corresponds to data for each metabolite. One column specifying a unique identifier for each metabolite (row) must be present.}

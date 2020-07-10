@@ -4,8 +4,14 @@
 \alias{plot.proData}
 \title{plot.proData}
 \usage{
-\method{plot}{proData}(omicsData, order_by = NULL, color_by = NULL,
-  facet_by = NULL, facet_cols = NULL, ...)
+\method{plot}{proData}(
+  omicsData,
+  order_by = NULL,
+  color_by = NULL,
+  facet_by = NULL,
+  facet_cols = NULL,
+  ...
+)
 }
 \description{
 For plotting an S3 object of type 'proData'

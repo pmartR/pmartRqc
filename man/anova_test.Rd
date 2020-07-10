@@ -4,9 +4,15 @@
 \alias{anova_test}
 \title{Tests for a quantiative difference between groups (aka factors, aka main effects)}
 \usage{
-anova_test(omicsData, comparisons = NULL, pval_adjust = "none",
-  pval_thresh = 0.05, covariates = NULL, paired = FALSE,
-  equal_var = TRUE)
+anova_test(
+  omicsData,
+  comparisons = NULL,
+  pval_adjust = "none",
+  pval_thresh = 0.05,
+  covariates = NULL,
+  paired = FALSE,
+  equal_var = TRUE
+)
 }
 \arguments{
 \item{omicsData}{A pmartR data object of any class}

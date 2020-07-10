@@ -4,8 +4,7 @@
 \alias{write_stat_results_omics}
 \title{Creates a list of three sheets, Normalized Data, DA Test Results, and Only DA biomolecules - for OMICS project}
 \usage{
-write_stat_results_omics(omicsData, statResData, refCondition,
-  filePath = NULL)
+write_stat_results_omics(omicsData, statResData, refCondition, filePath = NULL)
 }
 \arguments{
 \item{omicsData}{an object of one of the classes "pepData", "proData", "metabData", or "lipidData", usually created by \code{\link{as.pepData}}, \code{\link{as.proData}}, \code{\link{as.metabData}}, or \code{\link{lipidData}}, respectively.}

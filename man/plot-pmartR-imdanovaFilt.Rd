@@ -4,8 +4,7 @@
 \alias{plot.imdanovaFilt}
 \title{plot.imdanovaFilt}
 \usage{
-\method{plot}{imdanovaFilt}(filter_object, min_nonmiss_anova = NULL,
-  min_nonmiss_gtest = NULL, ...)
+\method{plot}{imdanovaFilt}(filter_object, min_nonmiss_anova = NULL, min_nonmiss_gtest = NULL, ...)
 }
 \arguments{
 \item{min_nonmiss_anova}{the minimum number of non-missing feature values allowed per group for \code{anova_filter}. Suggested value is 2.}

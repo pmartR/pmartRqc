@@ -4,10 +4,19 @@
 \alias{spans_procedure}
 \title{Calculate SPANS Score for a Number of Normalization Methods}
 \usage{
-spans_procedure(omicsData, norm_fn = c("median", "mean", "zscore",
-  "mad"), subset_fn = c("all", "los", "ppp", "rip", "ppp_rip"),
-  params = NULL, group = NULL, n_iter = 1000, sig_thresh = 1e-04,
-  nonsig_thresh = 0.5, min_nonsig = 20, min_sig = 20, ...)
+spans_procedure(
+  omicsData,
+  norm_fn = c("median", "mean", "zscore", "mad"),
+  subset_fn = c("all", "los", "ppp", "rip", "ppp_rip"),
+  params = NULL,
+  group = NULL,
+  n_iter = 1000,
+  sig_thresh = 1e-04,
+  nonsig_thresh = 0.5,
+  min_nonsig = 20,
+  min_sig = 20,
+  ...
+)
 }
 \arguments{
 \item{omicsData}{an object of the class 'pepData' or 'proData' created by \code{\link{as.pepData}} or \code{\link{as.proData}} respectively. The data must be log transformed (using edata_transform()) and have a grouping structure, usually set by calling group_designation() on the object.}

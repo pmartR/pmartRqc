@@ -4,8 +4,14 @@
 \alias{plot.pepData}
 \title{plot.pepData}
 \usage{
-\method{plot}{pepData}(omicsData, order_by = NULL, color_by = NULL,
-  facet_by = NULL, facet_cols = NULL, ...)
+\method{plot}{pepData}(
+  omicsData,
+  order_by = NULL,
+  color_by = NULL,
+  facet_by = NULL,
+  facet_cols = NULL,
+  ...
+)
 }
 \arguments{
 \item{order_by}{a character string specifying a main effect by which to order the boxplots. This main effect must be found in the column names of f_data in the omicsData object. If \code{order_by} is "group_DF", the boxplots will be ordered by the group variable from the group_designation function. If NULL (default), the boxplots will be displayed in the order they appear in the data.}

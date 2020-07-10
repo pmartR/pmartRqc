@@ -4,9 +4,15 @@
 \alias{custom_filter}
 \title{Custom Filter}
 \usage{
-custom_filter(omicsData, e_data_remove = NULL, f_data_remove = NULL,
-  e_meta_remove = NULL, e_data_keep = NULL, f_data_keep = NULL,
-  e_meta_keep = NULL)
+custom_filter(
+  omicsData,
+  e_data_remove = NULL,
+  f_data_remove = NULL,
+  e_meta_remove = NULL,
+  e_data_keep = NULL,
+  f_data_keep = NULL,
+  e_meta_keep = NULL
+)
 }
 \arguments{
 \item{omicsData}{an object of class "pepData", "proData", "metabData", or "lipidData", created by \code{\link{as.pepData}}, \code{\link{as.proData}}, \code{\link{as.metabData}}, or \code{\link{as.lipidData}}, respectively.}

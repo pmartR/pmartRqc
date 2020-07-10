@@ -4,9 +4,16 @@
 \alias{gtest_filter}
 \title{Identifies peptides to be filtered out in preparation for IMD-ANOVA.}
 \usage{
-gtest_filter(nonmiss_per_group, groupDF = NULL, omicsData = NULL,
-  e_data = NULL, alpha = NULL, min_nonmiss_gtest = NULL,
-  cname_id = NULL, samp_id = NULL)
+gtest_filter(
+  nonmiss_per_group,
+  groupDF = NULL,
+  omicsData = NULL,
+  e_data = NULL,
+  alpha = NULL,
+  min_nonmiss_gtest = NULL,
+  cname_id = NULL,
+  samp_id = NULL
+)
 }
 \arguments{
 \item{nonmiss_per_group}{list created by \code{\link{nonmissing_per_group}}. The first element giving the total number of possible samples for each group. The second element giving a data.frame with the first column giving the biomolecule and the second through kth columns giving the number of non-missing observations for each of the \code{k} groups.}

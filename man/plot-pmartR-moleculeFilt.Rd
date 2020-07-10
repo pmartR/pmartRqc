@@ -4,8 +4,7 @@
 \alias{plot.moleculeFilt}
 \title{plot.moleculeFilt}
 \usage{
-\method{plot}{moleculeFilt}(filter_object, min_num = NULL,
-  cumulative = TRUE, ...)
+\method{plot}{moleculeFilt}(filter_object, min_num = NULL, cumulative = TRUE, ...)
 }
 \arguments{
 \item{min_num}{integer value specifying the minimum number of times each feature must be observed across all samples.  If a value is specified, a horizontal line will be drawn when \code{cumulative=TRUE}, and bars will be colored appropriatel if \code{cumulative=FALSE}.  Defaults to NULL.}

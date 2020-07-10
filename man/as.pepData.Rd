@@ -4,8 +4,16 @@
 \alias{as.pepData}
 \title{Convert Data to Appropriate pmartR Class}
 \usage{
-as.pepData(e_data, f_data, e_meta = NULL, edata_cname, fdata_cname,
-  emeta_cname = NULL, techrep_cname = NULL, ...)
+as.pepData(
+  e_data,
+  f_data,
+  e_meta = NULL,
+  edata_cname,
+  fdata_cname,
+  emeta_cname = NULL,
+  techrep_cname = NULL,
+  ...
+)
 }
 \arguments{
 \item{e_data}{a \eqn{p \times n + 1} data.frame of expression data, where \eqn{p} is the number of peptides observed and \eqn{n} is the number of samples (an additional peptide identifier/name column should also be present anywhere in the data.frame). Each row corresponds to data for each peptide. One column specifying a unique identifier for each peptide (row) must be present.}

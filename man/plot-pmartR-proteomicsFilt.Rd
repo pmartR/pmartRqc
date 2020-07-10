@@ -4,8 +4,14 @@
 \alias{plot.proteomicsFilt}
 \title{plot.proteomicsFilt}
 \usage{
-\method{plot}{proteomicsFilt}(filter_object, mapping = "both",
-  cumulative = TRUE, log_scale = TRUE, min_num_peps = NULL, ...)
+\method{plot}{proteomicsFilt}(
+  filter_object,
+  mapping = "both",
+  cumulative = TRUE,
+  log_scale = TRUE,
+  min_num_peps = NULL,
+  ...
+)
 }
 \arguments{
 \item{mapping}{One of 'pep_to_pro', 'pro_to_pep', or 'both'. Defaults to 'both'.

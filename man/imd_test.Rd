@@ -4,8 +4,12 @@
 \alias{imd_test}
 \title{Tests for the independence of missing data across groups (aka factors, aka main effects)}
 \usage{
-imd_test(omicsData, comparisons = NULL, pval_adjust = "none",
-  pval_thresh = 0.05)
+imd_test(
+  omicsData,
+  comparisons = NULL,
+  pval_adjust = "none",
+  pval_thresh = 0.05
+)
 }
 \arguments{
 \item{omicsData}{A pmartR data object of any class}

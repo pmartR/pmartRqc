@@ -4,9 +4,16 @@
 \alias{imd_anova}
 \title{Tests for a qualitative and quantiative difference between groups using IMD and ANOVA, respectively}
 \usage{
-imd_anova(omicsData, comparisons = NULL, test_method,
-  pval_adjust = "none", pval_thresh = 0.05, covariates = NULL,
-  paired = FALSE, equal_var = TRUE)
+imd_anova(
+  omicsData,
+  comparisons = NULL,
+  test_method,
+  pval_adjust = "none",
+  pval_thresh = 0.05,
+  covariates = NULL,
+  paired = FALSE,
+  equal_var = TRUE
+)
 }
 \arguments{
 \item{omicsData}{A pmartR data object of any class, which has a `group_df` attribute that is usually created by the `group_designation()` function}
