@@ -466,6 +466,16 @@ plot_volcano <- function(x,
       `Fold change` = if(length(fc) == 0) NA else fc,
       check.names = FALSE
     )
+    
+    if(plot_method == "gtest"){
+      
+      col1 <- paste0("Count ", base)
+      col2 <- paste0("Count ", nonbase)
+      
+      df[[col1]] <- x$Full_results[[col_base]]
+      df[[col2]] <- x$Full_results[[col_nonbase]]
+    }
+    
     row.names(df) <- NULL
     return(df)
   })
@@ -563,6 +573,11 @@ plot_volcano <- function(x,
       
     } else {
       
+      base <- strsplit(comp, "_vs_")[[1]][2]
+      nonbase <- strsplit(comp, "_vs_")[[1]][1]
+      col1 <- paste0("Count ", base)
+      col2 <- paste0("Count ", nonbase)
+      
       comp_df$DE <- sign(comp_df$`Difference in % present`)
       comp_df$DE[(comp_df$`G-test p-value` < -log10(attr(x, "pval_thresh")))] <- 0
       comp_df$DE <- gsub(1, "Positive", 
@@ -578,7 +593,9 @@ plot_volcano <- function(x,
       comp_df$DE[comp_df$DE == "NaN"] <- "Non-Significant"
       
       comp_df <- dplyr::arrange(comp_df, `Difference in % present`)
-      comp_df$Biomolecule <- factor(comp_df$Biomolecule, levels = unique(comp_df$Biomolecule ))
+      comp_df$Biomolecule <- as.character(comp_df$Biomolecule)
+      comp_df$Biomolecule <- factor(comp_df$Biomolecule, 
+                                    levels = unique(comp_df$Biomolecule ))
       
       if(interactive){
         
@@ -600,10 +617,13 @@ plot_volcano <- function(x,
           x = ~Biomolecule,
           color = ~comp_df[[color_by]],
           colors = fc_colors,
-          hovertext = paste0("Difference in % present: ", 
-                             signif(comp_df$`Difference in % present`, 4),
-                             "/n",
-                             comp_df$DE),
+          hovertext = paste(
+            paste0("Difference in % present: ", 
+                   signif(comp_df$`Difference in % present`, 4)),
+            paste0(col1, ": ", as.numeric(comp_df[[col1]]), "/", total_groups[base]),
+            paste0(col2, ": ", as.numeric(comp_df[[col2]]), "/", total_groups[nonbase]),
+            paste0("Direction: ", comp_df$DE), 
+            sep = "\n"),
           type = "scatter",
           mode = "markers"
         ) %>% 
